@@ -1,0 +1,230 @@
+h1 {
+    font-weight: lighter;
+    margin: 16px;
+}
+
+/* PAGE STYLING */
+body {
+    background-color: #FAFAFA;
+    font-size: 16px;
+    display: block;
+    font-family: Arial;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* LINK STYLING */
+a.link {
+    color: #4800b7;
+    text-decoration: none;
+}
+
+a.link:visited {
+    color: #4800b7;
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: #b75200;
+    text-decoration: underline;
+}
+
+/* NAV STYLING */
+.headerRule {
+    margin: auto;
+    padding: 0;
+    width: 66%;
+}
+
+hr {
+    background: #4800b7;
+    color: #4800b7;
+    border: none;
+    height: 1px;
+}
+
+.nav {
+    width: 100%;
+    background: white;
+    padding: 15px 0px;
+}
+
+.email {
+    margin-bottom: 8px;
+    font-size: 110%;
+}
+
+.contact {
+    text-align: center;
+    padding: 16px;
+}
+
+/* BIO STYLING */
+.socialMediaLinks {
+    text-decoration: none;
+    color: #757575;
+    font-size: 80%;
+}
+
+.profileContainer {
+    width: 100%;
+    min-height: 300px;
+}
+
+.profileContent {
+    width: 80%;
+    margin: auto;
+}
+
+.bio {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.profilePicLarge, .profilePicSmall {
+    float: left;
+    min-height: 250px;
+    width: 50%;
+    position: relative;
+}
+
+.profilePicSmall {
+    display: none;
+}
+
+.bio > p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profilePicLarge > img,
+.profilePicSmall > img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* BODY CONTENT */
+.content {
+    width: 66%;
+    margin: auto;
+    padding-top: 16px;
+}
+
+ul.works {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* SAVED FOR POSSIBLE USE */
+/* .collapsible {
+}
+
+.previewContent {
+} */
+
+.previewText {
+    width: 75%;
+    float: left;
+}
+
+.previewButtonContainer {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewButtonContainer > button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1.5px solid #4800b7;
+    background-color: #fff;
+    font-size: 24px;
+}
+
+i {
+    color: #4800b7;
+    vertical-align: middle;
+}
+
+.previewButtonContainer > button:hover,
+.previewButtonContainer > button:focus,
+.previewButtonContainer > button:hover > i,
+.previewButtonContainer > button:focus > i {
+    outline: none;
+    color: #fff;
+    background-color: #4800b7;
+}
+
+.expandedDetails {
+    display: none;
+    float: left;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    width: 90%;
+}
+
+.service {
+    float: left;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 1200px) {
+    .profileContent {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .profileContent {
+        margin: none;
+        width: 100%;
+    }
+    .bio, .profilePicSmall {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .profilePicLarge {
+        display: none;
+    }
+    .profileContainer {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .email {
+        font-size: 90%;
+        margin-bottom: 0;
+    }
+    .headerRule {
+        width: 100%;
+    }
+    .nav {
+        padding: 0px;
+    }
+    .content {
+        width: 80%;
+    }
+    div.contact > a.link.ui-link {
+        font-size: 60%;
+    }
+    .profileContainer {
+        width: 100%;
+    }
+    .profilePicLarge {
+        display: none;
+    }
+}
