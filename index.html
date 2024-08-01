@@ -46,17 +46,7 @@
         </div>
         <div class="bio">
           <p>
-            I received my PhD from UC Berkeley where I was advised by
-            <a class="link" href="https://people.eecs.berkeley.edu/~dawnsong/"> Dawn Song</a> and
-            <a class="link" href="https://www.stat.berkeley.edu/~jsteinhardt/"> Jacob Steinhardt</a>.
-            I am now the director of the <a class="link" href="https://safe.ai">Center for AI Safety</a>. I am interested in <a class="link" href="https://mlsafety.org">AI Safety</a>. I received my BS from UChicago.
-            My research is supported by the NSF GRFP and the Open Philanthropy AI Fellowship. I helped contribute 
-            the
-            <a class="link" href="https://paperswithcode.com/method/gelu">GELU activation function</a> (the most-used activation in state-of-the-art models including BERT, GPT, Vision Transformers, etc.), the
-            <a class="link" href="https://arxiv.org/abs/1610.02136"> out-of-distribution detection baseline</a>, and
-            <a class="link" href="https://arxiv.org/abs/1903.12261"> distribution</a>
-            <a class="link" href="https://arxiv.org/pdf/1907.07174.pdf"> shift</a>
-            <a class="link" href="https://arxiv.org/pdf/2006.16241.pdf"> benchmarks</a>.
+            Dan Hendrycks is the founder and executive director of the Center for AI Safety. He received his PhD in AI from UC Berkeley. He has contributed the <a class="link" href="https://paperswithcode.com/method/gelu">GELU</a> activation function (the most-used activation in state-of-the-art models including BERT, GPT, Vision Transformers, etc.), benchmarks and methods in robustness, <a class="link" href="https://en.wikipedia.org/wiki/MMLU">MMLU</a>, and an <a class="link" href="aisafetybook.com">Introduction to AI Safety, Ethics, and Society</a>.
           </p>
         </div>
         <div class="profilePicLarge">
@@ -89,9 +79,10 @@
     var worksData = [
       {
         title: "An Introduction to AI Safety, Ethics, and Society",
-        titleLink: "https://drive.google.com/file/d/1JN7-ZGx9KLqRJ94rOQVwRSa7FPZGl2OY/view?usp=sharing",
+        titleLink: "https://www.aisafetybook.com/",
         credits: "Dan Hendrycks",
         links: [{ PDF: "https://drive.google.com/file/d/1JN7-ZGx9KLqRJ94rOQVwRSa7FPZGl2OY/view?usp=sharing" }, { site: "https://www.aisafetybook.com/" }],
+        extras: ["<br/>Taylor \& Francis"],
         details: "As AI systems are increasingly embedded across economies, militaries and societies, it has never been more pressing to ensure that they are deployed in ways that are safe, ethical, and have a positive societal impact. This book aims to provide an accessible introduction to students, practitioners and other readers looking to better understand these issues. While grounded in concrete problems faced by current machine learning systems, it takes a comprehensive and interdisciplinary approach to AI risks that draws on engineering, economics, philosophy, and other disciplines.",
       },
       {
@@ -102,10 +93,32 @@
         details: "Generative AI and Large Language Models (LLMs) including ChatGPT have ushered the world into a new era with rich new capabilities for wide-ranging application domains. At the same time, there is little understanding of how these new capabilities emerge, their limitations and potential risks. In this class, we will introduce foundations of LLMs, study methods for better understanding LLMs, discuss scaling laws and emergence, and explore the risks and challenges with these technologies and how we can build towards safe and beneficial AI. In particular, this class will cover a wide-ranging topics including: Foundations of LLMs, Interpretability, Scaling laws, Adversarial robustness, AI alignment and governance, Trojans and unlearning, Privacy and watermarking, Agency and emergence, Reasoning and mathematics, Evaluation and benchmarking",
       },
       {
+        title: "Improving Alignment and Robustness with Circuit Breakers",
+        titleLink: "https://arxiv.org/abs/2406.04313",
+        credits: "Andy Zou, Long Phan, Justin Wang, Derek Duenas, Maxwell Lin, Maksym Andriushchenko, Rowan Wang, Zico Kolter, Matt Fredrikson, Dan Hendrycks",
+        links: [{ arXiv: "https://arxiv.org/abs/2406.04313" }, { code: "https://github.com/GraySwanAI/circuit-breakers"} ],
+        details: "AI systems can take harmful actions and are highly vulnerable to adversarial attacks. We present an approach, inspired by recent advances in representation engineering, that interrupts the models as they respond with harmful outputs with "circuit breakers." Existing techniques aimed at improving alignment, such as refusal training, are often bypassed. Techniques such as adversarial training try to plug these holes by countering specific attacks. As an alternative to refusal training and adversarial training, circuit-breaking directly controls the representations that are responsible for harmful outputs in the first place. Our technique can be applied to both text-only and multimodal language models to prevent the generation of harmful outputs without sacrificing utility -- even in the presence of powerful unseen attacks. Notably, while adversarial robustness in standalone image recognition remains an open challenge, circuit breakers allow the larger multimodal system to reliably withstand image "hijacks" that aim to produce harmful content. Finally, we extend our approach to AI agents, demonstrating considerable reductions in the rate of harmful actions when they are under attack. Our approach represents a significant step forward in the development of reliable safeguards to harmful behavior and adversarial attacks.",
+      },
+      {
+        title: "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+        titleLink: "https://arxiv.org/abs/2407.21792",
+        credits: "Richard Ren*, Steven Basart*, Adam Khoja, Alice Gatti, Long Phan, Xuwang Yin, Mantas Mazeika, Alexander Pan, Gabriel Mukobi, Ryan H. Kim, Stephen Fitz, Dan Hendrycks",
+        links: [{ arXiv: "https://arxiv.org/abs/2407.21792" }],
+        details: "As artificial intelligence systems grow more powerful, there has been increasing interest in "AI safety" research to address emerging and future risks. However, the field of AI safety remains poorly defined and inconsistently measured, leading to confusion about how researchers can contribute. This lack of clarity is compounded by the unclear relationship between AI safety benchmarks and upstream general capabilities (e.g., general knowledge and reasoning). To address these issues, we conduct a comprehensive meta-analysis of AI safety benchmarks, empirically analyzing their correlation with general capabilities across dozens of models and providing a survey of existing directions in AI safety. Our findings reveal that many safety benchmarks highly correlate with upstream model capabilities, potentially enabling "safetywashing" -- where capability improvements are misrepresented as safety advancements. Based on these findings, we propose an empirical foundation for developing more meaningful safety metrics and define AI safety in a machine learning research context as a set of clearly delineated research goals that are empirically separable from generic capabilities advancements. In doing so, we aim to provide a more rigorous framework for AI safety research, advancing the science of safety evaluations and clarifying the path towards measurable progress.",
+      },
+      {
+        title: "Tamper-Resistant Safeguards for Open-Weight LLMs",
+        titleLink: "https://arxiv.org/abs/TBD",
+        credits: "Rishub Tamirisa*, Bhrugu Bharathi*, Long Phan, Andy Zhou, Alice Gatti, Tarun Suresh, Maxwell Lin, Justin Wang, Rowan Wang, Ron Arel, Andy Zou, Dawn Song, Dan Hendrycks**, Mantas Mazeika**",
+        links: [{ arXiv: "https://arxiv.org/abs/TBD" }, { code: "https://github.com/rishub-tamirisa/tamper-resistance"}],
+        details: "Rapid advances in the capabilities of large language models (LLMs) have raised widespread concerns regarding their potential for malicious use. Open-weight LLMs present unique challenges, as existing safeguards lack robustness to tampering attacks that modify model weights. For example, recent works have demonstrated that refusal and unlearning safeguards can be trivially removed with a few steps of fine-tuning. These vulnerabilities necessitate new approaches for enabling the safe release of open-weight LLMs. We develop a method, called TAR, for building tamper-resistant safeguards into open-weight LLMs such that adversaries cannot remove the safeguards even after thousands of steps of fine-tuning. In extensive evaluations and red teaming analyses, we find that our method greatly improves tamper-resistance while preserving benign capabilities. Our results demonstrate that tamper-resistance is a tractable problem, opening up a promising new avenue to improve the safety and security of open-weight LLMs.",
+      },
+      {
         title: "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
         titleLink: "https://www.wmdp.ai",
         credits: "Nathaniel Li, Alexander Pan, Anjali Gopal, Summer Yue, Daniel Berrios, Alice Gatti, Justin D. Li, Ann-Kathrin Dombrowski, Shashwat Goel, Long Phan, Gabriel Mukobi, Nathan Helm-Burger, Rassin Lababidi, Lennart Justen, Andrew B. Liu, Michael Chen, Isabelle Barrass, Oliver Zhang, Xiaoyuan Zhu, Rishub Tamirisa, Bhrugu Bharathi, Adam Khoja, Zhenqi Zhao, Ariel Herbert-Voss, Cort B. Breuer, Andy Zou, Mantas Mazeika, Zifan Wang, Palash Oswal, Weiran Liu, Adam A. Hunt, Justin Tienken-Harder, Kevin Y. Shih, Kemper Talley, John Guan, Russell Kaplan, Ian Steneker, David Campbell, Brad Jokubaitis, Alex Levinson, Jean Wang, William Qian, Kallol Krishna Karmakar, Steven Basart, Stephen Fitz, Mindy Levine, Ponnurangam Kumaraguru, Uday Tupakula, Vijay Varadharajan, Yan Shoshitaishvili, Jimmy Ba, Kevin M. Esvelt, Alexandr Wang, Dan Hendrycks",
         links: [{ arXiv: "https://arxiv.org/abs/2403.03218" }, { site: "https://www.wmdp.ai" }, { code: "https://github.com/centerforaisafety/wmdp" }, {TIME: "https://time.com/6878893/ai-artificial-intelligence-dangerous-knowledge/"}],
+        extras: ["<br/>ICML"],
         details: "The White House Executive Order on Artificial Intelligence highlights the risks of large language models (LLMs) empowering malicious actors in developing biological, cyber, and chemical weapons. To measure these risks of malicious use, government institutions and major AI labs are developing evaluations for hazardous capabilities in LLMs. However, current evaluations are private, preventing further research into mitigating risk. Furthermore, they focus on only a few, highly specific pathways for malicious use. To fill these gaps, we publicly release the Weapons of Mass Destruction Proxy (WMDP) benchmark, a dataset of 4,157 multiple-choice questions that serve as a proxy measurement of hazardous knowledge in biosecurity, cybersecurity, and chemical security. WMDP was developed by a consortium of academics and technical consultants, and was stringently filtered to eliminate sensitive information prior to public release. WMDP serves two roles: first, as an evaluation for hazardous knowledge in LLMs, and second, as a benchmark for unlearning methods to remove such hazardous knowledge. To guide progress on unlearning, we develop CUT, a state-of-the-art unlearning method based on controlling model representations. CUT reduces model performance on WMDP while maintaining general capabilities in areas such as biology and computer science, suggesting that unlearning may be a concrete path towards reducing malicious use from LLMs. We release our benchmark and code publicly at https://www.wmdp.ai",
       },
       {
