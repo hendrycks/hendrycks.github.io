@@ -1,3 +1,4 @@
+/* Keep existing styles from the beginning */
 h1 {
     font-weight: lighter;
     margin: 16px;
@@ -75,18 +76,19 @@ hr {
 .profileContent {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bio {
-    float: left;
     width: 50%;
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .profilePicLarge, .profilePicSmall {
-    float: left;
-    min-height: 250px;
     width: 50%;
+    min-height: 250px;
     position: relative;
 }
 
@@ -96,8 +98,6 @@ hr {
 
 .bio > p {
     line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .profilePicLarge > img,
@@ -124,24 +124,29 @@ ul.works {
     list-style-type: none;
 }
 
-/* SAVED FOR POSSIBLE USE */
-/* .collapsible {
+/* Updated collapsible styles for flexbox */
+.collapsible {
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .previewContent {
-} */
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
 .previewText {
     width: 75%;
-    float: left;
+    padding-right: 15px;
 }
 
 .previewButtonContainer {
     width: 25%;
-    float: left;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 5px;
 }
 
 .previewButtonContainer > button {
@@ -151,11 +156,18 @@ ul.works {
     border: 1.5px solid #4800b7;
     background-color: #fff;
     font-size: 24px;
+    cursor: pointer;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    line-height: 1;          
+    padding: 0;              
 }
 
 i {
     color: #4800b7;
-    vertical-align: middle;
+    font-style: normal;
+    margin-top: -2px;
 }
 
 .previewButtonContainer > button:hover,
@@ -169,14 +181,13 @@ i {
 
 .expandedDetails {
     display: none;
-    float: left;
+    width: 100%;
     margin-bottom: 18px;
     margin-top: 0px;
-    width: 90%;
 }
 
 .service {
-    float: left;
+    width: 100%;
 }
 
 /* RESPONSIVE DESIGN */
@@ -185,46 +196,72 @@ i {
         width: 100%;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     .profileContent {
-        margin: none;
-        width: 100%;
+        flex-direction: column;
     }
+    
     .bio, .profilePicSmall {
-        float: none;
         width: 100%;
-        display: block;
     }
+    
+    .profilePicSmall {
+        display: block;
+        order: -1;
+    }
+    
     .profilePicLarge {
         display: none;
     }
+    
     .profileContainer {
         width: 80%;
         margin: auto;
         text-align: center;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .email {
         font-size: 90%;
         margin-bottom: 0;
     }
+    
     .headerRule {
         width: 100%;
     }
+    
     .nav {
         padding: 0px;
     }
+    
     .content {
         width: 80%;
     }
+    
     div.contact > a.link.ui-link {
         font-size: 60%;
     }
+    
     .profileContainer {
         width: 100%;
     }
+    
     .profilePicLarge {
         display: none;
+    }
+    
+    .previewContent {
+        flex-direction: column;
+    }
+    
+    .previewText, .previewButtonContainer {
+        width: 100%;
+    }
+    
+    .previewButtonContainer {
+        align-items: center;
+        margin-top: 10px;
     }
 }
