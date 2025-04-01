@@ -53,7 +53,11 @@
       </div>
     </div>
 
-    <h2>Works</h2>
+    <h2>Selected Works</h2>
+    <ul class="works selected-works">
+    </ul>
+    
+    <h2>All Works</h2>
     <ul class="works">
     </ul>
 
@@ -79,7 +83,7 @@
         title: "Superintelligence Strategy",
         titleLink: "https://nationalsecurity.ai/",
         credits: "Dan Hendrycks, Eric Schmidt, Alexandr Wang",
-        links: [{ site: "https://nationalsecurity.ai/" }, { PDF: "https://arxiv.org/pdf/2503.05628" }, { Abridged: "https://drive.google.com/file/d/1wLcGgLOTVNsVVbgS5lPHOnqOQtNT8Z5j/view?usp=sharing" }, {TIME: "https://time.com/7265056/nuclear-level-risk-of-superintelligent-ai/"}],
+        links: [{ site: "https://nationalsecurity.ai/" }, { "Standard PDF": "https://www.nationalsecurity.ai/pdf/standard" }, { "Expert PDF": "https://www.nationalsecurity.ai/pdf/expert" }, {TIME: "https://time.com/7265056/nuclear-level-risk-of-superintelligent-ai/"}],
         details: "Rapid advances in AI are beginning to reshape national security. Destabilizing AI developments could rupture the balance of power and raise the odds of great-power conflict, while widespread proliferation of capable AI hackers and virologists would lower barriers for rogue actors to cause catastrophe. Superintelligence—AI vastly better than humans at nearly all cognitive tasks—is now anticipated by AI researchers. Just as nations once developed nuclear strategies to secure their survival, we now need a coherent superintelligence strategy to navigate a new period of transformative change. We introduce the concept of Mutual Assured AI Malfunction (MAIM): a deterrence regime resembling nuclear mutual assured destruction (MAD) where any state’s aggressive bid for unilateral AI dominance is met with preventive sabotage by rivals. Given the relative ease of sabotaging a destabilizing AI project—through interventions ranging from covert cyberattacks to potential kinetic strikes on datacenters—MAIM already describes the strategic picture AI superpowers find themselves in. Alongside this, states can engage in nonproliferation to rogue actors to keep weaponizable AI capabilities out of their hands, and they can increase their competitiveness by bolstering their economies and militaries through AI. Taken together, the three-part framework of deterrence, nonproliferation, and competitiveness outlines a robust strategy to superintelligence in the years ahead.",
       },
       {
@@ -107,14 +111,14 @@
         title: "Humanity's Last Exam",
         titleLink: "https://agi.safe.ai/",
         credits: "Long Phan*, Alice Gatti*, Ziwen Han*, Nathaniel Li*, Josephina Hu, Hugh Zhang, Sean Shi, Michael Choi, Anish Agrawal, Arnav Chopra, Adam Khoja, Ryan Kim, Richard Ren, Jason Hausenloy, Oliver Zhang, Mantas Mazeika, Summer Yue**, Alexandr Wang**, Dan Hendrycks**",
-        links: [{ site: "https://agi.safe.ai/" }],
+        links: [{ site: "https://agi.safe.ai/" }, {NYT: "https://www.nytimes.com/2025/01/23/technology/ai-test-humanitys-last-exam.html"}],
         details: "Benchmarks are important tools for tracking the rapid advancements in large language model (LLM) capabilities. However, benchmarks are not keeping pace in difficulty: LLMs now achieve over 90\% accuracy on popular benchmarks like MMLU, limiting informed measurement of state-of-the-art LLM capabilities. In response, we introduce Humanity's Last Exam (HLE), a multi-modal benchmark at the frontier of human knowledge, designed to be the final closed-ended academic benchmark of its kind with broad subject coverage. HLE consists of 2,700 questions across dozens of subjects, including mathematics, humanities, and the natural sciences. HLE is developed globally by subject-matter experts and consists of multiple-choice and short-answer questions suitable for automated grading. Each question has a known solution that is unambiguous and easily verifiable, but cannot be quickly answered via internet retrieval. State-of-the-art LLMs demonstrate low accuracy and calibration on HLE, highlighting a significant gap between current LLM capabilities and the expert human frontier on closed-ended academic questions.",
       },
       {
         title: "An Introduction to AI Safety, Ethics, and Society",
         titleLink: "https://www.aisafetybook.com/",
         credits: "Dan Hendrycks",
-        links: [{ PDF: "https://drive.google.com/file/d/1JN7-ZGx9KLqRJ94rOQVwRSa7FPZGl2OY/view?usp=sharing" }, { site: "https://www.aisafetybook.com/" }],
+        links: [{ site: "https://www.aisafetybook.com/" }, { PDF: "https://drive.google.com/file/d/1JN7-ZGx9KLqRJ94rOQVwRSa7FPZGl2OY/view?usp=sharing" }],
         extras: ["<br/>Taylor &amp; Francis"],
         details: "As AI systems are increasingly embedded across economies, militaries and societies, it has never been more pressing to ensure that they are deployed in ways that are safe, ethical, and have a positive societal impact. This book aims to provide an accessible introduction to students, practitioners and other readers looking to better understand these issues. While grounded in concrete problems faced by current machine learning systems, it takes a comprehensive and interdisciplinary approach to AI risks that draws on engineering, economics, philosophy, and other disciplines.",
       },
@@ -129,7 +133,7 @@
         title: "Improving Alignment and Robustness with Circuit Breakers",
         titleLink: "https://arxiv.org/abs/2406.04313",
         credits: "Andy Zou, Long Phan, Justin Wang, Derek Duenas, Maxwell Lin, Maksym Andriushchenko, Rowan Wang, Zico Kolter, Matt Fredrikson, Dan Hendrycks",
-        links: [{ arXiv: "https://arxiv.org/abs/2406.04313" }, { code: "https://github.com/GraySwanAI/circuit-breakers"} ],
+        links: [{ code: "https://github.com/GraySwanAI/circuit-breakers"}, { arXiv: "https://arxiv.org/abs/2406.04313" }],
         details: "AI systems can take harmful actions and are highly vulnerable to adversarial attacks. We present an approach, inspired by recent advances in representation engineering, that interrupts the models as they respond with harmful outputs with 'circuit breakers.' Existing techniques aimed at improving alignment, such as refusal training, are often bypassed. Techniques such as adversarial training try to plug these holes by countering specific attacks. As an alternative to refusal training and adversarial training, circuit-breaking directly controls the representations that are responsible for harmful outputs in the first place. Our technique can be applied to both text-only and multimodal language models to prevent the generation of harmful outputs without sacrificing utility -- even in the presence of powerful unseen attacks. Notably, while adversarial robustness in standalone image recognition remains an open challenge, circuit breakers allow the larger multimodal system to reliably withstand image 'hijacks' that aim to produce harmful content. Finally, we extend our approach to AI agents, demonstrating considerable reductions in the rate of harmful actions when they are under attack. Our approach represents a significant step forward in the development of reliable safeguards to harmful behavior and adversarial attacks.",
       },
       {
@@ -143,14 +147,14 @@
         title: "Tamper-Resistant Safeguards for Open-Weight LLMs",
         titleLink: "https://arxiv.org/abs/2408.00761",
         credits: "Rishub Tamirisa*, Bhrugu Bharathi*, Long Phan, Andy Zhou, Alice Gatti, Tarun Suresh, Maxwell Lin, Justin Wang, Rowan Wang, Ron Arel, Andy Zou, Dawn Song, Dan Hendrycks**, Mantas Mazeika**",
-        links: [{ arXiv: "https://arxiv.org/abs/2408.00761" }, { code: "https://github.com/rishub-tamirisa/tamper-resistance"}, {WIRED: "https://www.wired.com/story/center-for-ai-safety-open-source-llm-safeguards/"}],
+        links: [{ code: "https://github.com/rishub-tamirisa/tamper-resistance"}, { arXiv: "https://arxiv.org/abs/2408.00761"},  {WIRED: "https://www.wired.com/story/center-for-ai-safety-open-source-llm-safeguards/"}],
         details: "Rapid advances in the capabilities of large language models (LLMs) have raised widespread concerns regarding their potential for malicious use. Open-weight LLMs present unique challenges, as existing safeguards lack robustness to tampering attacks that modify model weights. For example, recent works have demonstrated that refusal and unlearning safeguards can be trivially removed with a few steps of fine-tuning. These vulnerabilities necessitate new approaches for enabling the safe release of open-weight LLMs. We develop a method, called TAR, for building tamper-resistant safeguards into open-weight LLMs such that adversaries cannot remove the safeguards even after thousands of steps of fine-tuning. In extensive evaluations and red teaming analyses, we find that our method greatly improves tamper-resistance while preserving benign capabilities. Our results demonstrate that tamper-resistance is a tractable problem, opening up a promising new avenue to improve the safety and security of open-weight LLMs.",
       },
       {
         title: "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
         titleLink: "https://www.wmdp.ai",
         credits: "Nathaniel Li, Alexander Pan, Anjali Gopal, Summer Yue, Daniel Berrios, Alice Gatti, Justin D. Li, Ann-Kathrin Dombrowski, Shashwat Goel, Long Phan, Gabriel Mukobi, Nathan Helm-Burger, Rassin Lababidi, Lennart Justen, Andrew B. Liu, Michael Chen, Isabelle Barrass, Oliver Zhang, Xiaoyuan Zhu, Rishub Tamirisa, Bhrugu Bharathi, Adam Khoja, Zhenqi Zhao, Ariel Herbert-Voss, Cort B. Breuer, Andy Zou, Mantas Mazeika, Zifan Wang, Palash Oswal, Weiran Liu, Adam A. Hunt, Justin Tienken-Harder, Kevin Y. Shih, Kemper Talley, John Guan, Russell Kaplan, Ian Steneker, David Campbell, Brad Jokubaitis, Alex Levinson, Jean Wang, William Qian, Kallol Krishna Karmakar, Steven Basart, Stephen Fitz, Mindy Levine, Ponnurangam Kumaraguru, Uday Tupakula, Vijay Varadharajan, Yan Shoshitaishvili, Jimmy Ba, Kevin M. Esvelt, Alexandr Wang, Dan Hendrycks",
-        links: [{ arXiv: "https://arxiv.org/abs/2403.03218" }, { site: "https://www.wmdp.ai" }, { code: "https://github.com/centerforaisafety/wmdp" }, {TIME: "https://time.com/6878893/ai-artificial-intelligence-dangerous-knowledge/"}],
+        links: [{ site: "https://www.wmdp.ai" }, { code: "https://github.com/centerforaisafety/wmdp" }, { arXiv: "https://arxiv.org/abs/2403.03218" }, {TIME: "https://time.com/6878893/ai-artificial-intelligence-dangerous-knowledge/"}],
         extras: ["<br/>ICML"],
         details: "The White House Executive Order on Artificial Intelligence highlights the risks of large language models (LLMs) empowering malicious actors in developing biological, cyber, and chemical weapons. To measure these risks of malicious use, government institutions and major AI labs are developing evaluations for hazardous capabilities in LLMs. However, current evaluations are private, preventing further research into mitigating risk. Furthermore, they focus on only a few, highly specific pathways for malicious use. To fill these gaps, we publicly release the Weapons of Mass Destruction Proxy (WMDP) benchmark, a dataset of 4,157 multiple-choice questions that serve as a proxy measurement of hazardous knowledge in biosecurity, cybersecurity, and chemical security. WMDP was developed by a consortium of academics and technical consultants, and was stringently filtered to eliminate sensitive information prior to public release. WMDP serves two roles: first, as an evaluation for hazardous knowledge in LLMs, and second, as a benchmark for unlearning methods to remove such hazardous knowledge. To guide progress on unlearning, we develop CUT, a state-of-the-art unlearning method based on controlling model representations. CUT reduces model performance on WMDP while maintaining general capabilities in areas such as biology and computer science, suggesting that unlearning may be a concrete path towards reducing malicious use from LLMs. We release our benchmark and code publicly at https://www.wmdp.ai",
       },
@@ -158,35 +162,35 @@
         title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
         titleLink: "https://www.harmbench.org",
         credits: "Mantas Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, Norman Mu, Elham Sakhaee, Nathaniel Li, Steven Basart, Bo Li, David Forsyth, Dan Hendrycks",
-        links: [{ arXiv: "https://arxiv.org/abs/2402.04249" }, { site: "https://www.harmbench.org" }, { code: "https://github.com/centerforaisafety/HarmBench" }],
+        links: [{ site: "https://www.harmbench.org" }, { code: "https://github.com/centerforaisafety/HarmBench" }, { arXiv: "https://arxiv.org/abs/2402.04249" }],
         details: "Automated red teaming holds substantial promise for uncovering and mitigating the risks associated with the malicious use of large language models (LLMs), yet the field lacks a standardized evaluation framework to rigorously assess new methods. To address this issue, we introduce HarmBench, a standardized evaluation framework for automated red teaming. We identify several desirable properties previously unaccounted for in red teaming evaluations and systematically design HarmBench to meet these criteria. Using HarmBench, we conduct a large-scale comparison of 18 red teaming methods and 33 target LLMs and defenses, yielding novel insights. We also introduce a highly efficient adversarial training method that greatly enhances LLM robustness across a wide range of attacks, demonstrating how HarmBench enables codevelopment of attacks and defenses. We open source HarmBench at https://www.harmbench.org",
       },
       {
         title: "Representation Engineering: A Top-Down Approach to AI Transparency",
         titleLink: "https://www.ai-transparency.org",
         credits: "Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren, Alexander Pan, Xuwang Yin, Mantas Mazeika, Ann-Kathrin Dombrowski, Shashwat Goel, Nathaniel Li, Michael J. Byun, Zifan Wang, Alex Mallen, Steven Basart, Sanmi Koyejo, Dawn Song, Matt Fredrikson, Zico Kolter, Dan Hendrycks",
-        links: [{ arXiv: "https://arxiv.org/abs/2310.01405" }, { site: "https://www.ai-transparency.org" }, { code: "https://github.com/andyzoujm/representation-engineering" }],
+        links: [{ site: "https://www.ai-transparency.org" }, { code: "https://github.com/andyzoujm/representation-engineering" }, { arXiv: "https://arxiv.org/abs/2310.01405" }],
         details: "In this paper, we identify and characterize the emerging area of representation engineering (RepE), an approach to enhancing the transparency of AI systems that draws on insights from cognitive neuroscience. RepE places population-level representations, rather than neurons or circuits, at the center of analysis, equipping us with novel methods for monitoring and manipulating high-level cognitive phenomena in deep neural networks (DNNs). We provide baselines and an initial analysis of RepE techniques, showing that they offer simple yet effective solutions for improving our understanding and control of large language models. We showcase how these methods can provide traction on a wide range of safety-relevant problems, including honesty, harmlessness, power-seeking, and more, demonstrating the promise of top-down transparency research. We hope that this work catalyzes further exploration of RepE and fosters advancements in the transparency and safety of AI systems.",
       },
       {
         title: "Can LLMs Follow Simple Rules?",
         titleLink: "https://arxiv.org/abs/2311.04235",
         credits: "Norman Mu, Sarah Chen, Zifan Wang, Sizhe Chen, David Karamardian, Lulwa Aljeraisy, Dan Hendrycks, David Wagner",
-        links: [{ arXiv: "https://arxiv.org/abs/2311.04235" }, { site: "http://people.eecs.berkeley.edu/~normanmu/llm_rules/" }, { code: "https://github.com/normster/llm_rules" }],
+        links: [{ site: "http://people.eecs.berkeley.edu/~normanmu/llm_rules/" }, { code: "https://github.com/normster/llm_rules" }, { arXiv: "https://arxiv.org/abs/2311.04235" }],
         details: "As Large Language Models (LLMs) are deployed with increasing real-world responsibilities, it is important to be able to specify and constrain the behavior of these systems in a reliable manner. Model developers may wish to set explicit rules for the model, such as \"do not generate abusive content\", but these may be circumvented by jailbreaking techniques. Evaluating how well LLMs follow developer-provided rules in the face of adversarial inputs typically requires manual review, which slows down monitoring and methods development. To address this issue, we propose Rule-following Language Evaluation Scenarios (RuLES), a programmatic framework for measuring rule-following ability in LLMs. RuLES consists of 15 simple text scenarios in which the model is instructed to obey a set of rules in natural language while interacting with the human user. Each scenario has a concise evaluation program to determine whether the model has broken any rules in a conversation. Through manual exploration of model behavior in our scenarios, we identify 6 categories of attack strategies and collect two suites of test cases: one consisting of unique conversations from manual testing and one that systematically implements strategies from the 6 categories. Across various popular proprietary and open models such as GPT-4 and Llama 2, we find that all models are susceptible to a wide variety of adversarial hand-crafted user inputs, though GPT-4 is the best-performing model. Additionally, we evaluate open models under gradient-based attacks and find significant vulnerabilities. We propose RuLES as a challenging new setting for research into exploring and defending against both manual and automatic attacks on LLMs.",
       },
       {
         title: "An Overview of Catastrophic AI Risks",
         titleLink: "https://arxiv.org/abs/2306.12001",
         credits: "Dan Hendrycks, Mantas Mazeika, Thomas Woodside",
-        links: [{ arxiv: "https://arxiv.org/abs/2306.12001" }, { WSJ: "https://www.wsj.com/tech/ai/ai-risk-humanity-experts-thoughts-4b271757"}],
+        links: [{ arXiv: "https://arxiv.org/abs/2306.12001" }, { WSJ: "https://www.wsj.com/tech/ai/ai-risk-humanity-experts-thoughts-4b271757"}],
         details: "Rapid advancements in artificial intelligence (AI) have sparked growing concerns among experts, policymakers, and world leaders regarding the potential for increasingly advanced AI systems to pose catastrophic risks. Although numerous risks have been detailed separately, there is a pressing need for a systematic discussion and illustration of the potential dangers to better inform efforts to mitigate them. This paper provides an overview of the main sources of catastrophic AI risks, which we organize into four categories: malicious use, in which individuals or groups intentionally use AIs to cause harm; AI race, in which competitive environments compel actors to deploy unsafe AIs or cede control to AIs; organizational risks, highlighting how human factors and complex systems can increase the chances of catastrophic accidents; and rogue AIs, describing the inherent difficulty in controlling agents far more intelligent than humans. For each category of risk, we describe specific hazards, present illustrative stories, envision ideal scenarios, and propose practical suggestions for mitigating these dangers. Our goal is to foster a comprehensive understanding of these risks and inspire collective and proactive efforts to ensure that AIs are developed and deployed in a safe manner. Ultimately, we hope this will allow us to realize the benefits of this powerful technology while minimizing the potential for catastrophic outcomes.",
       },
       {
         title: "Natural Selection Favors AIs over Humans",
         titleLink: "https://arxiv.org/abs/2303.16200",
         credits: "Dan Hendrycks",
-        links: [{ arxiv: "https://arxiv.org/abs/2303.16200" }, {TIME: "https://time.com/6283958/darwinian-argument-for-worrying-about-ai/"}],
+        links: [{ arXiv: "https://arxiv.org/abs/2303.16200" }, {TIME: "https://time.com/6283958/darwinian-argument-for-worrying-about-ai/"}],
         details: "For billions of years, evolution has been the driving force behind the development of life, and more recently humans. Evolution endowed humans with unsurpassed intelligence, which gave us the power to dominate the planet. Now, humans aim to create artificial beings that are smarter than us. As Artificial Intelligences (AIs) evolve and surpass us in all domains, how might coevolution with AI turn out? By analyzing the environment that will shape the evolution of AI, we argue that the most successful AI agents will likely have undesirable traits. The competitive pressures of the global economy and geopolitics will give rise to AI agents that automate humans, deceive others, and gain power. Paired with intelligence that may exceed that of humans, this could lead to us losing control of our future. More abstractly, we argue that natural selection operates on systems that compete and vary, and that selfish strategies outcompete altruistic strategies. This harsh Darwinian logic could also apply to artificial agents, and if agents evolve to behave selfishly and pursue their own interests with little regard for others, they could pose catastrophic risks. To counteract these risks and Darwinian forces, we consider interventions such as carefully designing AI agents’ intrinsic motivations, introducing constraints on their actions, and institutions that encourage cooperation.",
       },
       {
@@ -201,7 +205,7 @@
         title: "Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark",
         titleLink: "https://arxiv.org/abs/2304.03279",
         credits: "Alexander Pan*, Chan Jun Shern*, Andy Zou*, Nathaniel Li, Steven Basart, Thomas Woodside, Jonathan Ng, Hanlin Zhang, Scott Emmons, Dan Hendrycks",
-        links: [{ arxiv: "https://arxiv.org/abs/2304.03279" }],
+        links: [{ arXiv: "https://arxiv.org/abs/2304.03279" }],
         extras: ["<br/>ICML 2023"],
         details: "Artificial agents have traditionally been trained to maximize reward, which may incentivize power-seeking and deception, analogous to how next-token prediction in language models (LMs) may incentivize toxicity. So do agents naturally learn to be Machiavellian? And how do we measure these behaviors in general-purpose models such as GPT-4? Towards answering these questions, we introduce MACHIAVELLI, a benchmark of 134 Choose-Your-Own-Adventure games containing over half a million rich, diverse scenarios that center on social decision-making. Scenario labeling is automated with LMs, which are more performant than human annotators. We mathematize dozens of harmful behaviors and use our annotations to evaluate agents' tendencies to be power-seeking, cause disutility, and commit ethical violations. We observe some tension between maximizing reward and behaving ethically. To improve this trade-off, we investigate LM-based methods to steer agents' towards less harmful behaviors. Our results show that agents can both act competently and morally, so concrete progress can currently be made in machine ethics--designing agents that are Pareto improvements in both safety and capabilities.",
       },
@@ -232,7 +236,7 @@
         titleLink: "https://arxiv.org/abs/2206.15474",
         credits: "Andy Zou, Tristan Xiao, Ryan Jia, Joe Kwon, Mantas Mazeika, Richard Li, Dawn Song, Jacob Steinhardt, Owain Evans, Dan Hendrycks",
         extras: ["<br/>NeurIPS 2022"],
-        links: [{ arXiv: "https://arxiv.org/abs/2206.15474" }, {code: "https://github.com/andyzoujm/autocast"}],
+        links: [{code: "https://github.com/andyzoujm/autocast"}, { arXiv: "https://arxiv.org/abs/2206.15474" }],
         details: "Forecasting future world events is a challenging but valuable task. Forecasts of climate, geopolitical conflict, pandemics and economic indicators help shape policy and decision making. In these domains, the judgment of expert humans contributes to the best forecasts. Given advances in language modeling, can these forecasts be automated? To this end, we introduce Autocast, a dataset containing thousands of forecasting questions and an accompanying news corpus. Questions are taken from forecasting tournaments, ensuring high quality, real-world importance, and diversity. The news corpus is organized by date, allowing us to precisely simulate the conditions under which humans made past forecasts (avoiding leakage from the future). Motivated by the difficulty of forecasting numbers across orders of magnitude (e.g. global cases of COVID-19 in 2022), we also curate IntervalQA, a dataset of numerical questions and metrics for calibration. We test language models on our forecasting task and find that performance is far below a human expert baseline. However, performance improves with increased model size and incorporation of relevant information from the news corpus. In sum, Autocast poses a novel challenge for large language models and improved performance could bring large practical benefits.",
       },
       {
@@ -240,7 +244,7 @@
         titleLink: "https://arxiv.org/abs/2210.10039",
         credits: "Mantas Mazeika*, Eric Tang*, Andy Zou, Steven Basart, Dawn Song, David Forsyth, Jacob Steinhardt, Dan Hendrycks",
         extras: ["<br/>NeurIPS 2022"],
-        links: [{ arXiv: "https://arxiv.org/abs/2210.10039" }, {code: "https://github.com/hendrycks/emodiversity"}],
+        links: [{code: "https://github.com/hendrycks/emodiversity"}, { arXiv: "https://arxiv.org/abs/2210.10039" }],
         details: "In recent years, deep neural networks have demonstrated increasingly strong abilities to recognize objects and activities in videos. However, as video understanding becomes widely used in real-world applications, a key consideration is developing human-centric systems that understand not only the content of the video but also how it would affect the wellbeing and emotional state of viewers. To facilitate research in this setting, we introduce two large-scale datasets with over 60,000 videos manually annotated for subjective wellbeing and emotional response. The Video to Valence (V2V) dataset contains annotations of relative pleasantness between videos, which enables a continuous spectrum of wellbeing. The Video Cognitive Empathy (VCE) dataset contains annotations for distributions of fine-grained emotional responses, allowing models to gain a detailed understanding of affective states. In experiments, we show how video models that are largely trained to recognize actions and find contours of objects can be repurposed to understand human preferences and the emotional content of videos. Although there is room for improvement, predicting wellbeing and emotional response is on the horizon for state-of-the-art models. We hope our datasets can help foster further advances at the intersection of commonsense video understanding and human preference learning.",
       },
       {
@@ -248,7 +252,7 @@
         titleLink: "https://openreview.net/pdf?id=gT6j4_tskUt",
         credits: "Jingkang Yang, Pengyun Wang, Dejian Zou, Zitang Zhou, Kunyuan Ding, WENXUAN PENG, Haoqi Wang, Guangyao Chen, Bo Li, Yiyou Sun, Xuefeng Du, Kaiyang Zhou, Wayne Zhang, Dan Hendrycks, Yixuan Li, Ziwei Liu",
         extras: ["<br/>NeurIPS 2022"],
-        links: [{ arXiv: "https://openreview.net/pdf?id=gT6j4_tskUt" }, {code: "https://github.com/Jingkang50/OpenOOD"}],
+        links: [{code: "https://github.com/Jingkang50/OpenOOD"}, { arXiv: "https://openreview.net/pdf?id=gT6j4_tskUt" }],
         details: "Out-of-distribution (OOD) detection is vital to safety-critical machine learning applications and has thus been extensively studied, with a plethora of methods developed in the literature. However, the field currently lacks a unified, strictly formulated, and comprehensive benchmark, which often results in unfair comparisons and inconclusive results. From the problem setting perspective, OOD detection is closely related to neighboring fields including anomaly detection (AD), open set recognition (OSR), and model uncertainty, since methods developed for one domain are often applicable to each other. To help the community to improve the evaluation and advance, we build a unified, well-structured codebase called OpenOOD, which implements over 30 methods developed in relevant fields and provides a comprehensive benchmark under the recently proposed generalized OOD detection framework. With a comprehensive comparison of these methods, we are gratified that the field has progressed significantly over the past few years, where both preprocessing methods and the orthogonal post-hoc methods show strong potential.",
       },
       {
@@ -279,7 +283,7 @@
         titleLink: "https://arxiv.org/abs/2112.05135",
         credits: "Dan Hendrycks*, Andy Zou*, Mantas Mazeika, Leonard Tang, Bo Li, Dawn Song, and Jacob Steinhardt",
         extras: ["<br/>CVPR 2022"],
-        links: [{ arXiv: "https://arxiv.org/abs/2112.05135" },  { code: "https://github.com/andyzoujm/pixmix/"}],
+        links: [{ code: "https://github.com/andyzoujm/pixmix/"}, { arXiv: "https://arxiv.org/abs/2112.05135" }],
         details: "In real-world applications of machine learning, reliable and safe systems must consider measures of performance beyond standard test set accuracy. These other goals include out-of-distribution (OOD) robustness, prediction consistency, resilience to adversaries, calibrated uncertainty estimates, and the ability to detect anomalous inputs. However, improving performance towards these goals is often a balancing act that today's methods cannot achieve without sacrificing performance on other safety axes. For instance, adversarial training improves adversarial robustness but sharply degrades other classifier performance metrics. Similarly, strong data augmentation and regularization techniques often improve OOD robustness but harm anomaly detection, raising the question of whether a Pareto improvement on all existing safety measures is possible. To meet this challenge, we design a new data augmentation strategy utilizing the natural structural complexity of pictures such as fractals, which outperforms numerous baselines, is near Pareto-optimal, and roundly improves safety measures.",
       },
       {
@@ -287,7 +291,7 @@
         titleLink: "https://arxiv.org/abs/1911.11132",
         credits: "Dan Hendrycks*, Steven Basart*, Mantas Mazeika, Andy Zou, Joe Kwon, Mohammadreza Mostajabi, Jacob Steinhardt, Dawn Song",
           extras: ["<br/>ICML 2022"],
-        links: [{ arXiv: "https://arxiv.org/abs/1911.11132" }, { code: "https://github.com/hendrycks/anomaly-seg" }],
+        links: [{ code: "https://github.com/hendrycks/anomaly-seg" }, { arXiv: "https://arxiv.org/abs/1911.11132" }],
         details: "Detecting out-of-distribution examples is important for safety-critical machine learning applications such as detecting novel biological phenomena and self-driving cars. However, existing research mainly focuses on simple small-scale settings. To set the stage for more realistic out-of-distribution detection, we depart from small-scale settings and explore large-scale multiclass and multi-label settings with high-resolution images and thousands of classes. To make future work in real-world settings possible, we create new benchmarks for three large-scale settings. To test ImageNet multiclass anomaly detectors, we introduce the Species dataset containing over 700,000 images and over a thousand anomalous species. We leverage ImageNet-21K to evaluate PASCAL VOC and COCO multilabel anomaly detectors. Third, we introduce a new benchmark for anomaly segmentation by introducing a segmentation benchmark with road anomalies. We conduct extensive experiments in these more realistic settings for out-of-distribution detection and find that a surprisingly simple detector based on the maximum logit outperforms prior methods in all the large-scale multi-class, multi-label, and segmentation tasks, establishing a simple new baseline for future work."
       },
       {
@@ -302,7 +306,7 @@
         title: "What Would Jiminy Cricket Do? Towards Agents That Behave Morally",
         titleLink: "https://arxiv.org/abs/2110.13136",
         credits: "Dan Hendrycks*, Mantas Mazeika*, Andy Zou, Sahil Patel, Christine Zhu, Jesus Navarro, Dawn Song, Bo Li, Jacob Steinhardt",
-        links: [{ arXiv: "https://arxiv.org/abs/2110.13136" }, { code: "https://github.com/hendrycks/jiminy-cricket" }],
+        links: [{ code: "https://github.com/hendrycks/jiminy-cricket" }, { arXiv: "https://arxiv.org/abs/2110.13136" }],
         extras: ["<br/>NeurIPS 2021"],
         details: "When making decisions in everyday life, people are guided by their conscience, an internal sense of right and wrong, to behave morally even when doing so is inconvenient. By contrast, artificial agents trained to maximize reward may behave immorally if their reward signal only concerns the task at hand. This bias in reward functions is exacerbated in video games, which often directly reward immoral behavior. With the advent of generally capable agents that train on many environments, addressing reward bias in complex environments will become important. However, prior work on aligning agents with human values and morals focuses on small-scale settings lacking in semantic complexity. To enable research in larger, more realistic settings, we introduce Jiminy Cricket, a benchmark of 25 text-based adventure games containing thousands of semantically rich, morally salient scenarios. Via dense annotations for every possible action, Jiminy Cricket environments robustly evaluate whether agents in text-based games can act morally while maximizing reward. To improve the moral behavior of agents, we propose leveraging pretrained language models with commonsense ethical knowledge and mediating this knowledge into actions with various conditioning strategies. We demonstrate in extensive experiments that this conscience-based approach can reduce immoral behavior without sacrificing performance.",
       },
@@ -310,7 +314,7 @@
         title: "Measuring Coding Challenge Competence With APPS",
         titleLink: "https://arxiv.org/abs/2105.09938",
         credits: "Dan Hendrycks*, Steven Basart*, Saurav Kadavath, Mantas Mazeika, Akul Arora, Ethan Guo, Collin Burns, Samir Puranik, Horace He, Dawn Song, Jacob Steinhardt",
-        links: [{ arXiv: "https://arxiv.org/abs/2105.09938" }, { code: "https://github.com/hendrycks/apps" }],
+        links: [{ code: "https://github.com/hendrycks/apps" }, { arXiv: "https://arxiv.org/abs/2105.09938" }],
         extras: ["<br/>NeurIPS 2021"],
         details: "While programming is one of the most broadly applicable skills in modern society, modern machine learning models still cannot code solutions to basic problems. It can be difficult to accurately assess code generation performance, and there has been surprisingly little work on evaluating code generation in a way that is both flexible and rigorous. To meet this challenge, we introduce APPS, a benchmark for code generation. Unlike prior work in more restricted settings, our benchmark measures the ability of models to take an arbitrary natural language specification and generate Python code fulfilling this specification. Similar to how companies assess candidate software developers, we then evaluate models by checking their generated code on test cases. Our benchmark includes 10,000 problems, which range from having simple one-line solutions to being substantial algorithmic challenges. We fine-tune large language models on both GitHub and our training set, and we find that the prevalence of syntax errors is decreasing exponentially. Recent models such as GPT-Neo can pass approximately 15% of the test cases of introductory problems, so we find that machine learning models are beginning to learn how to code. As the social significance of automatic code generation increases over the coming years, our benchmark can provide an important measure for tracking advancements."
       },
@@ -318,7 +322,7 @@
         title: "Measuring Mathematical Problem Solving With the MATH Dataset",
         titleLink: "https://arxiv.org/abs/2103.03874",
         credits: "Dan Hendrycks, Collin Burns, Saurav Kadavath, Akul Arora, Steven Basart, Eric Tang, Dawn Song, Jacob Steinhardt",
-        links: [{ arXiv: "https://arxiv.org/abs/2103.03874" }, { code: "https://github.com/hendrycks/math" }],
+        links: [{ code: "https://github.com/hendrycks/math" }, { arXiv: "https://arxiv.org/abs/2103.03874" }],
         extras: ["<br/>NeurIPS 2021"],
         details: "Many intellectual endeavors require mathematical problem solving, but this skill remains beyond the capabilities of computers. To measure this ability in machine learning models, we introduce MATH, a new dataset of 12,500 challenging competition mathematics problems. Each problem in MATH has a full step-by-step solution which can be used to teach models to generate answer derivations and explanations. To facilitate future research and increase accuracy on MATH, we also contribute a large auxiliary pretraining dataset which helps teach models the fundamentals of mathematics. Even though we are able to increase accuracy on MATH, our results show that accuracy remains relatively low, even with enormous Transformer models. Moreover, we find that simply increasing budgets and model parameter counts will be impractical for achieving strong mathematical reasoning if scaling trends continue. While scaling Transformers is automatically solving most other text-based tasks, scaling is not currently solving MATH. To have more traction on mathematical problem solving we will likely need new algorithmic advancements from the broader research community."
       },
@@ -326,7 +330,7 @@
         title: "CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review",
         titleLink: "https://arxiv.org/abs/2103.06268",
         credits: "Dan Hendrycks*, Collin Burns*, Anya Chen, Spencer Ball",
-        links: [{ arXiv: "https://arxiv.org/abs/2103.06268" }, { code: "https://github.com/TheAtticusProject/cuad" }],
+        links: [{ code: "https://github.com/TheAtticusProject/cuad" }, { arXiv: "https://arxiv.org/abs/2103.06268" }],
         extras: ["<br/>NeurIPS 2021"],
         details: "Many specialized domains remain untouched by deep learning, as large labeled datasets require expensive expert annotators. We address this bottleneck within the legal domain by introducing the Contract Understanding Atticus Dataset (CUAD), a new dataset for legal contract review. CUAD was created with dozens of legal experts from The Atticus Project and consists of over 13,000 annotations. The task is to highlight salient portions of a contract that are important for a human to review. We find that Transformer models have nascent performance, but that this performance is strongly influenced by model design and training dataset size. Despite these promising results, there is still substantial room for improvement. As one of the only large, specialized NLP benchmarks annotated by experts, CUAD can serve as a challenging research benchmark for the broader NLP community."
       },
@@ -335,7 +339,7 @@
         titleLink: "https://arxiv.org/abs/2006.16241",
         credits: "Dan Hendrycks, Steven Basart*, Norman Mu*, Saurav Kadavath, Frank Wang, Evan Dorundo, Rahul Desai, Tyler Zhu, Samyak Parajuli, Mike Guo, Dawn Song, Jacob Steinhardt, Justin Gilmer",
         extras: ["<br/>ICCV 2021"],
-        links: [{ arXiv: "https://arxiv.org/abs/2006.16241" }, { code: "https://github.com/hendrycks/imagenet-r" }],
+        links: [{ code: "https://github.com/hendrycks/imagenet-r" }, { arXiv: "https://arxiv.org/abs/2006.16241" }],
         details: "We introduce four new real-world distribution shift datasets consisting of changes in image style, image blurriness, geographic location, camera operation, and more. With our new datasets, we take stock of previously proposed methods for improving out-of-distribution robustness and put them to the test. We find that using larger models and artificial data augmentations can improve robustness on real-world distribution shifts, contrary to claims in prior work. We find improvements in artificial robustness benchmarks can transfer to real-world distribution shifts, contrary to claims in prior work. Motivated by our observation that data augmentations can help with real-world distribution shifts, we also introduce a new data augmentation method which advances the state-of-the-art and outperforms models pretrained with 1000x more labeled data. Overall we find that some methods consistently help with distribution shifts in texture and local image statistics, but these methods do not help with some other distribution shifts like geographic changes. Our results show that future research must study multiple distribution shifts simultaneously, as we demonstrate that no evaluated method consistently improves robustness.",
       },
       {
@@ -343,7 +347,7 @@
         titleLink: "https://arxiv.org/abs/1907.07174",
         credits: "Dan Hendrycks, Kevin Zhao*, Steven Basart*, Jacob Steinhardt, Dawn Song",
         extras: ["<br/>CVPR 2021"],
-        links: [{ arXiv: "https://arxiv.org/abs/1907.07174" }, { code: "https://github.com/hendrycks/natural-adv-examples" }],
+        links: [{ code: "https://github.com/hendrycks/natural-adv-examples" }, { arXiv: "https://arxiv.org/abs/1907.07174" }],
         details: "We introduce natural adversarial examples -- real-world, unmodified, and naturally occurring examples that cause classifier accuracy to significantly degrade. We curate 7,500 natural adversarial examples and release them in an ImageNet classifier test set that we call ImageNet-A. This dataset serves as a new way to measure classifier robustness. Like l_p adversarial examples, ImageNet-A examples successfully transfer to unseen or black-box classifiers. For example, on ImageNet-A a DenseNet-121 obtains around 2% accuracy, an accuracy drop of approximately 90%. Recovering this accuracy is not simple because ImageNet-A examples exploit deep flaws in current classifiers including their over-reliance on color, texture, and background cues. We observe that popular training techniques for improving robustness have little effect, but we show that some architectural changes can enhance robustness to natural adversarial examples. Future research is required to enable robust generalization to this hard ImageNet test set. <a class='link' href='./BBC_World_News-2019-06-25_19-49-31.mp4'>See selected press.</a>"
       },
       {
@@ -351,7 +355,7 @@
         titleLink: "https://arxiv.org/abs/2009.03300",
         credits: 'Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, Jacob Steinhardt',
         extras: ["<br/>ICLR 2021"],
-        links: [{ arXiv: 'https://arxiv.org/abs/2009.03300' }, { code: 'https://github.com/hendrycks/test' }],
+        links: [{ code: 'https://github.com/hendrycks/test' }, { arXiv: 'https://arxiv.org/abs/2009.03300' }],
         details: "We propose a new test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more. To attain high accuracy on this test, models must possess extensive world knowledge and problem solving ability. We find that while most recent models have near random-chance accuracy, the very largest GPT-3 model improves over random chance by almost 20 percentage points on average. However, on every one of the 57 tasks, the best models still need substantial improvements before they can reach expert-level accuracy. Models also have lopsided performance and frequently do not know when they are wrong. Worse, they still have near-random accuracy on some socially important subjects such as morality and law. By comprehensively evaluating the breadth and depth of a model's academic and professional understanding, our test can be used to analyze models across many tasks and to identify important shortcomings."
       },
       {
@@ -359,7 +363,7 @@
         titleLink: 'https://arxiv.org/abs/2008.02275',
         credits: 'Dan Hendrycks*, Collin Burns*, Steven Basart, Andrew Critch, Jerry Li, Dawn Song, Jacob Steinhardt',
         extras: ["<br/>ICLR 2021"],
-        links: [{ arXiv: 'https://arxiv.org/abs/2008.02275' }, { code: 'https://github.com/hendrycks/ethics' }],
+        links: [{ code: 'https://github.com/hendrycks/ethics' }, { arXiv: 'https://arxiv.org/abs/2008.02275' }],
         details: "We show how to assess a language model's knowledge of basic concepts of morality. We introduce the ETHICS dataset, a new benchmark that spans concepts in justice, well-being, duties, virtues, and commonsense morality. Models predict widespread moral judgments about diverse text scenarios. This requires connecting physical and social world knowledge to value judgements, a capability that may enable us to steer chatbot outputs or eventually regularize open-ended reinforcement learning agents. With the ETHICS dataset, we find that current language models have a promising but incomplete understanding of basic ethical knowledge. Our work shows that progress can be made on machine ethics today, and it provides a steppingstone toward AI that is aligned with human values."
       },
       {
@@ -367,7 +371,7 @@
         titleLink: "https://arxiv.org/abs/2004.06100",
         credits: "Dan Hendrycks*, Xiaoyuan Liu*, Eric Wallace, Adam Dziedzic, Rishabh Krishnan, Dawn Song",
         extras: ["<br/>ACL 2020"],
-        links: [{ arXiv: "https://arxiv.org/abs/2004.06100" }, { code: "https://github.com/camelop/NLP-Robustness" }],
+        links: [{ code: "https://github.com/camelop/NLP-Robustness" }, { arXiv: "https://arxiv.org/abs/2004.06100" }],
         details: "Although pretrained Transformers such as BERT achieve high accuracy on in-distribution examples, do they generalize to new distributions? We systematically measure out-of-distribution (OOD) generalization for seven NLP datasets by constructing a new robustness benchmark with realistic distribution shifts. We measure the generalization of previous models including bag-of-words models, ConvNets, and LSTMs, and we show that pretrained Transformers' performance declines are substantially smaller. Pretrained transformers are also more effective at detecting anomalous or OOD examples, while many previous models are frequently worse than chance. We examine which factors affect robustness, finding that larger models are not necessarily more robust, distillation can be harmful, and more diverse pretraining data can enhance robustness. Finally, we show where future work can improve OOD robustness.",
       },
       {
@@ -375,7 +379,7 @@
         titleLink: "https://arxiv.org/abs/1912.02781",
         credits: "Dan Hendrycks*, Norman Mu*, Ekin D. Cubuk, Barret Zoph, Justin Gilmer, Balaji Lakshminarayanan",
         extras: ["<br/>ICLR 2020"],
-        links: [{ arXiv: "https://arxiv.org/abs/1912.02781" }, { code: "https://github.com/google-research/augmix" }],
+        links: [{ code: "https://github.com/google-research/augmix" }, { arXiv: "https://arxiv.org/abs/1912.02781" }],
         details: "Modern deep neural networks can achieve high accuracy when the training distribution and test distribution are identically distributed, but this assumption is frequently violated in practice. When the train and test distributions are mismatched, accuracy can plummet. Currently there are few techniques that improve robustness to unforeseen data shifts encountered during deployment. In this work, we propose a technique to improve the robustness and uncertainty estimates of image classifiers. We propose AugMix, a data processing technique that is simple to implement, adds limited computational overhead, and helps models withstand unforeseen corruptions. AugMix significantly improves robustness and uncertainty measures on challenging image classification benchmarks, closing the gap between previous methods and the best possible performance in some cases by more than half."
       },
       {
@@ -383,14 +387,14 @@
         titleLink: "https://arxiv.org/abs/1906.12340",
         credits: "Dan Hendrycks, Mantas Mazeika*, Saurav Kadavath*, Dawn Song",
         extras: ["<br/>NeurIPS 2019"],
-        links: [{ arXiv: "https://arxiv.org/abs/1906.12340" }, { code: "https://github.com/hendrycks/ss-ood" }],
+        links: [{ code: "https://github.com/hendrycks/ss-ood" }, { arXiv: "https://arxiv.org/abs/1906.12340" }],
         details: "We show recent advances in self-supervised learning, which was not yet a hot topic, greatly improve performance on various robustness and uncertainty tasks."
       },
       {
         title: "Testing Robustness Against Unforeseen Adversaries",
         titleLink: "https://arxiv.org/abs/1908.08016",
         credits: "Daniel Kang*, Yi Sun*, Dan Hendrycks, Tom Brown, Jacob Steinhardt",
-        links: [{ arXiv: "https://arxiv.org/abs/1908.08016" }, { code: "https://github.com/ddkang/advex-uar" }],
+        links: [{ code: "https://github.com/ddkang/advex-uar" }, { arXiv: "https://arxiv.org/abs/1908.08016" }],
         details: "In this paper we show how to adversarially synthesize snow, fog, and other corruptions."
       },
       {
@@ -405,16 +409,14 @@
         title: "Using Pre-Training Can Improve Model Robustness and Uncertainty",
         titleLink: "https://arxiv.org/abs/1901.09960",
         credits: "Dan Hendrycks, Kimin Lee, Mantas Mazeika",
-        extras: ["<br/>ICML 2019"],
-        links: [{ arXiv: "https://arxiv.org/abs/1901.09960" }, { code: "https://github.com/hendrycks/pre-training" }],
+        links: [{ code: "https://github.com/hendrycks/pre-training" }, { arXiv: "https://arxiv.org/abs/1901.09960" }],
         details: "This is the first paper in the literature to show adversarial training with more data works. We also show the label corruption is a far easier problem when models are first pretrained on a quality dataset."
       },
       {
         title: "Deep Anomaly Detection with Outlier Exposure",
         titleLink: "https://arxiv.org/abs/1812.04606",
         credits: "Dan Hendrycks, Mantas Mazeika, Thomas Dietterich",
-        extras: ["<br/>ICLR 2019"],
-        links: [{ arXiv: "https://arxiv.org/abs/1812.04606" }, { code: "https://github.com/hendrycks/outlier-exposure" }],
+        links: [{ code: "https://github.com/hendrycks/outlier-exposure" }, { arXiv: "https://arxiv.org/abs/1812.04606" }],
         details: "We show that generative models do not produce reliable uncertainty estimates. We also show that models can attain reliable uncertainty estimates by being exposed to real outliers. After being exposed to outliers, models can generalize to qualitatively new types of outliers."
       },
       {
@@ -446,7 +448,7 @@
         titleLink: "https://arxiv.org/abs/1610.02136",
         credits: "Dan Hendrycks, Kevin Gimpel",
         extras: ["<br/>ICLR 2017"],
-        links: [{ arXiv: "https://arxiv.org/abs/1610.02136" }, { code: "https://github.com/hendrycks/error-detection" }],
+        links: [{ code: "https://github.com/hendrycks/error-detection" }, { arXiv: "https://arxiv.org/abs/1610.02136" }],
         details: "In this paper we coin 'out-of-distribution detection' and initiate research on distribution shift.<br/>We consider the two related problems of detecting if an example is misclassified or out-of-distribution. We present a simple baseline that utilizes probabilities from softmax distributions. Correctly classified examples tend to have greater maximum softmax probabilities than erroneously classified and out-of-distribution examples, allowing for their detection. We assess performance by defining several tasks in computer vision, natural language processing, and automatic speech recognition, showing the effectiveness of this baseline across all. We then show the baseline can sometimes be surpassed, demonstrating the room for future research on these underexplored detection tasks."
       },
       {
@@ -466,29 +468,38 @@
         details: "In this paper we propose the SiLU (x*σ(x)) and the GELU (x*Φ(x)). The GELU is included in the PyTorch/Tensorflow/MXNet/Jax libraries, used in <a class='link' href='https://arxiv.org/abs/1810.04805'>BERT</a> and <a class='link' href='https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf'>GPT</a>, and is one of the <a class='link' href='https://paperswithcode.com/methods/category/activation-functions'>most used activation functions</a>."
       }
     ];
-    var ul = document.getElementsByClassName('works')[0];
-    for (i = 0; i < worksData.length; i += 1) {
-      // This loop creates this:
-      // <li>
-      //   <div class="collapsible">
-      //     <div class="previewContent">
-      //       <div class="previewText">
-      //         <a class="link" href="https://arxiv.org/abs/2009.03300">Measuring Massive Multitask Language Understanding</a>
-      //         <br/>
-      //         Dan Hendrycks, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, Jacob Steinhardt
-      //         <br/>
-      //         [<a class="link" href="https://arxiv.org/abs/2009.03300">arXiv</a>] [<a class="link" href="https://github.com/hendrycks/test">code</a>]
-      //       </div>
-      //       <div class="previewButtonContainer"><button class="collapseContent">+</button></div>
-      //     </div>
-      //     <p class="expandedDetails">
-      //       "We propose a new test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more. To attain high accuracy on this test, models must possess extensive world knowledge and problem solving ability. We find that while most recent models have near random-chance accuracy, the very largest GPT-3 model improves over random chance by almost 20 percentage points on average. However, on every one of the 57 tasks, the best models still need substantial improvements before they can reach expert-level accuracy. Models also have lopsided performance and frequently do not know when they are wrong. Worse, they still have near-random accuracy on some socially important subjects such as morality and law. By comprehensively evaluating the breadth and depth of a model's academic and professional understanding, our test can be used to analyze models across many tasks and to identify important shortcomings."
-      //     </p>
-      //     </div>
-      //   </div>
-      // </li>
-      var data = worksData[i];
+    
+    // Keep track of which works should be in the selected section
+    var selectedWorkTitles = ["Superintelligence Strategy", "An Overview of Catastrophic AI Risks", "Natural Selection Favors AIs over Humans", "An Introduction to AI Safety, Ethics, and Society"];
 
+    // Get references to both UL elements
+    var ulSelected = document.getElementsByClassName('selected-works')[0];
+    var ulAll = document.getElementsByClassName('works')[1]; // Note: using index 1 because both lists have class 'works'
+
+    // First, populate the selected works section in the order specified in selectedWorkTitles
+    for (let i = 0; i < selectedWorkTitles.length; i++) {
+      const selectedTitle = selectedWorkTitles[i];
+      
+      // Find the work data for this title
+      const workData = worksData.find(data => data.title === selectedTitle);
+      
+      if (workData) {
+        // Create and append the entry for Selected Works section
+        const selectedNode = createWorkNode(workData);
+        ulSelected.appendChild(selectedNode);
+      }
+    }
+
+    // Now populate the All Works section with all works in their original order
+    for (let i = 0; i < worksData.length; i++) {
+      const data = worksData[i];
+      const allWorksNode = createWorkNode(data);
+      ulAll.appendChild(allWorksNode);
+    }
+
+    // Helper function to create a work node from data
+    function createWorkNode(data) {
+      // Create elements with flexbox structure
       // Preview Title, Names, Links
       var previewText = document.createElement('div');
       previewText.classList.add('previewText');
@@ -504,6 +515,7 @@
       previewText.appendChild(titleLink);
       previewText.appendChild(br);
       previewText.appendChild(credits);
+      
       if (data.extras) {
         data.extras.forEach(function (extraDetail) {
           var extraContainer = document.createElement('span');
@@ -511,6 +523,7 @@
           previewText.appendChild(extraContainer);
         });
       }
+      
       if (data.links) {
         var links = data.links;
         var linksContainer = document.createElement('div');
@@ -527,30 +540,24 @@
         previewText.appendChild(br2);
         previewText.appendChild(linksContainer);
       }
-      var br3 = document.createElement('br');
-      previewText.appendChild(br3);
 
       // Button for collapsing
-      // <div class="previewButtonContainer"><button class="collapseContent"><i class="fas fa-cloud"></i></button></div>
       var button = document.createElement('button');
       var icon = document.createElement('i');
       icon.innerHTML = "+";
       button.appendChild(icon);
       button.addEventListener('click', function () {
-        const hiddenContent = this.parentNode.parentNode.parentNode.children[1];
-        // Remove previous button icon and define new one
-        this.removeChild(this.firstChild);
-        var icon = document.createElement('i');
+        const hiddenContent = this.closest('.collapsible').querySelector('.expandedDetails');
+        this.querySelector('i').innerHTML = hiddenContent.style.display === "block" ? "+" : "-";
+        
         if (hiddenContent.style.display === "block") {
           hiddenContent.style.display = "none";
-          icon.innerHTML = "+";
           this.blur();
         } else {
           hiddenContent.style.display = "block";
-          icon.innerHTML = "-"
         }
-        this.appendChild(icon);
       });
+      
       var buttonContainer = document.createElement('div');
       buttonContainer.classList.add('previewButtonContainer');
       buttonContainer.appendChild(button);
@@ -562,10 +569,7 @@
       previewContent.appendChild(buttonContainer);
 
       // Container for hidden content
-      // <p class="expandedDetails">
-      //   "We propose a new test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more. To attain high accuracy on this test, models must possess extensive world knowledge and problem solving ability. We find that while most recent models have near random-chance accuracy, the very largest GPT-3 model improves over random chance by almost 20 percentage points on average. However, on every one of the 57 tasks, the best models still need substantial improvements before they can reach expert-level accuracy. Models also have lopsided performance and frequently do not know when they are wrong. Worse, they still have near-random accuracy on some socially important subjects such as morality and law. By comprehensively evaluating the breadth and depth of a model's academic and professional understanding, our test can be used to analyze models across many tasks and to identify important shortcomings."
-      // </p>
-      var expandedDetails = document.createElement('p');
+      var expandedDetails = document.createElement('div');
       expandedDetails.classList.add('expandedDetails');
       expandedDetails.innerHTML = data.details;
 
@@ -578,14 +582,9 @@
       // List element to tie it all together
       var node = document.createElement('li');
       node.appendChild(collapsible);
-      ul.appendChild(node);
-    }
-
-    var allLinks = document.getElementsByTagName('a');
-    for (i = 0; i < allLinks.length; i += 1) {
-      allLinks[i].target = "_blank";
+      
+      return node;
     }
   </script>
 </body>
-
 </html>
