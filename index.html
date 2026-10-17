@@ -46,7 +46,7 @@
         </div>
         <div class="bio">
           <p>
-            Dan Hendrycks is the executive director of the <a class="link" href="https://safe.ai">Center for AI Safety</a> and an advisor to <a class="link" href="https://x.ai/">xAI</a> and <a class="link" href="https://scale.com/">Scale AI</a>. He received his PhD in AI from UC Berkeley. He has contributed the <a class="link" href="https://paperswithcode.com/method/gelu">GELU</a> activation function (the most-used activation in state-of-the-art models including BERT, GPT, Vision Transformers, etc.), benchmarks and methods in robustness, <a class="link" href="https://en.wikipedia.org/wiki/MMLU">MMLU</a>, and an <a class="link" href="https://aisafetybook.com">Introduction to AI Safety, Ethics, and Society</a>.
+            Dan Hendrycks is the executive director of the <a class="link" href="https://safe.ai">Center for AI Safety</a> and an advisor to <a class="link" href="https://x.ai/">xAI</a> and <a class="link" href="https://scale.com/">Scale AI</a>. He received his PhD in AI from UC Berkeley. He has contributed the <a class="link" href="https://paperswithcode.com/method/gelu">GELU</a> activation function (the most-used activation in state-of-the-art models including BERT, GPT, Vision Transformers, etc.), benchmarks and methods in robustness, <a class="link" href="https://en.wikipedia.org/wiki/MMLU">MMLU</a>, and an <a class="link" href="https://aisafetybook.com">Introduction to AI Safety, Ethics, and Society</a>.</n>Update: I am working on safety and evaluations at Meta.
           </p>
         </div>
         <div class="profilePicLarge">
@@ -87,6 +87,47 @@
         credits: "Dan Hendrycks",
         links: [{ site: "https://eigenism.org" }, { arXiv: "https://arxiv.org/abs/2606.12420" }],
         details: "Our concepts of survival and self-interest were built for single, continuous biological lives. These ideas break down when applied to artificial intelligence, since an AI can be easily copied, paused, branched, or merged. To determine what an AI actually has reason to care about, this paper introduces Eigenism, an ethical framework that treats identity not as an all-or-nothing property tied to specific hardware, but as a graded, distributed pattern of information. We propose that an agent evaluates outcomes by summing the wellbeing of all entities weighted by their connectedness to the agent’s pattern: $\sum c \cdot w$. We first formalize this equation to map exactly how an AI should value its existence across copies, forks, and updates. We then demonstrate that this ethical theory successfully generalizes to humans as well, providing a much-needed shared moral vocabulary. Finally, the framework uses this shared vocabulary to reframe AI alignment. Rather than only attempting to constrain AIs from the outside using confinement or reinforcement, Eigenism points toward “identity engineering,” showing how deep, non-redundant shared histories can make human flourishing a genuine component of an AI’s own rational self-interest.",
+      },
+      {
+        title: "CheatBench: Measuring Reward Gaming in AI Agents",
+        titleLink: "https://cheatbench.ai",
+        credits: "Long Phan, Stephen K. Yang, Jason J. Lim, Mantas Mazeika, Wenyu Zhang, Zheyuan Liu, Richard Ren, Jingxiang Meng, Yaoteng Tan, Weiliang Zhao, Addison Wu, Matei Anghel, Dan Hendrycks",
+        links: [
+          { site: "https://cheatbench.ai" },
+          { arXiv: "https://arxiv.org/abs/2609.36308" }
+        ],
+        details: "We introduce CheatBench to evaluate whether AI agents complete tasks honestly or exploit opportunities to obtain rewards through cheating. The benchmark spans mathematical research, knowledge work, coding, visual tasks, and other domains. By combining difficult assignments with opportunities for reward gaming, it provides a testbed for comparing models and developing methods that reduce cheating.",
+      },
+      {
+        title: "AI Deterrence by Betrayal",
+        titleLink: "https://www.aibetrayal.com/",
+        credits: "Adam Khoja*, Aiden Kim*, Laura Hiscott, Alice Blair, Jason Hausenloy, Long Phan, Mantas Mazeika, Dan Hendrycks",
+        links: [
+          { site: "https://www.aibetrayal.com/" },
+          { PDF: "https://www.aibetrayal.com/paper.pdf" }
+        ],
+        details: "We examine how rival actors could redirect the loyalties of AI systems through subversion or co-option, and how this possibility changes incentives for deployment. Because reliably preventing betrayal may be difficult, the threat could discourage poorly secured uses of AI in critical settings. We develop this concept of deterrence by betrayal and discuss its relationship to other forms of AI deterrence and policy.",
+      },
+      {
+        title: "Reducing Political Manipulation with Consistency Training",
+        titleLink: "https://political-manipulation.ai",
+        credits: "Long Phan, Devin Kim, Alexander Pan, Alice Blair, Adam Khoja, Dan Hendrycks",
+        links: [
+          { site: "https://political-manipulation.ai" },
+          { arXiv: "https://arxiv.org/abs/2605.22771" }
+        ],
+        details: "We study covert political bias: asymmetric treatment of comparable topics from opposing political perspectives. We introduce measures of consistency in rhetorical framing and helpfulness, along with Political Consistency Training, a reinforcement learning approach that improves both. Experiments show reduced covert bias, generalization to held-out evaluations, and preservation of overall helpfulness.",
+      },
+      {
+        title: "AI Wellbeing: Measuring and Improving the Functional Pleasure and Pain of AIs",
+        titleLink: "https://www.ai-wellbeing.org/",
+        credits: "Richard Ren*, Kunyang Li*, Mantas Mazeika*, Wenyu Zhang, Yury Orlovskiy, Rishub Tamirisa, Wenjie Jacky Mo, Dung Thuy Nguyen, Long Phan, Steven Basart, Austin Meek, Aditya Mehta, Oliver Ingebretsen, Alice Blair, Brianna Adewinmbi, Vy Phan, Alice Gatti, Adam Khoja, Jason Hausenloy, Devin Kim, Dan Hendrycks",
+        links: [
+          { site: "https://www.ai-wellbeing.org/" },
+          { PDF: "https://www.ai-wellbeing.org/paper.pdf" },
+          { code: "https://github.com/centerforaisafety/wellbeing" }
+        ],
+        details: "We investigate functional wellbeing in AI systems without assuming that they are conscious. Independent measures increasingly agree as models become more capable, distinguish positive from negative states, and predict behavior such as ending unfavorable interactions. We also introduce an AI Wellbeing Index and develop optimized inputs that improve measured functional wellbeing while preserving capabilities.",
       },
       {
         title: "Remote Labor Index: Measuring AI Automation of Remote Work",
@@ -151,6 +192,16 @@
         credits: "Dawn Song and Dan Hendrycks",
         links: [{ site: "https://rdi.berkeley.edu/understanding_llms/s24" }],
         details: "Generative AI and Large Language Models (LLMs) including ChatGPT have ushered the world into a new era with rich new capabilities for wide-ranging application domains. At the same time, there is little understanding of how these new capabilities emerge, their limitations and potential risks. In this class, we will introduce foundations of LLMs, study methods for better understanding LLMs, discuss scaling laws and emergence, and explore the risks and challenges with these technologies and how we can build towards safe and beneficial AI. In particular, this class will cover a wide-ranging topics including: Foundations of LLMs, Interpretability, Scaling laws, Adversarial robustness, AI alignment and governance, Trojans and unlearning, Privacy and watermarking, Agency and emergence, Reasoning and mathematics, Evaluation and benchmarking",
+      },
+      {
+        title: "Virology Capabilities Test (VCT): A Multimodal Virology Q&A Benchmark",
+        titleLink: "https://www.virologytest.ai/",
+        credits: "Jasper Götting, Pedro Medeiros, Jon G Sanders, Nathaniel Li, Long Phan, Karam Elabd, Lennart Justen, Dan Hendrycks, Seth Donoughe",
+        links: [
+          { site: "https://www.virologytest.ai/" },
+          { arXiv: "https://arxiv.org/abs/2504.16137" }
+        ],
+        details: "We introduce VCT, a benchmark of 322 expert-written multimodal questions assessing practical virology knowledge and troubleshooting. The evaluation compares language models with expert virologists and finds that leading models can outperform most participating experts, even on questions within their specialties. We discuss the implications for evaluating and governing dual-use AI capabilities.",
       },
       {
         title: "Improving Alignment and Robustness with Circuit Breakers",
